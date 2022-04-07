@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="uft-8">
+  <title>홈페이지 이용만족도조사</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+
+<style>
+*{margin:0; padding:0;}
+
+section{background:#FF9999;}
+
+header{width:750px; margin:0 auto; text-align:center; padding-top:50px;}
+h1{font-family: 'Pacifico', cursive; color:#93B5C6; }
+hr{width:100%; border:0; background-color:#ffe3e3; height:5px; margin:20px 0;}
+span{font-family: 'Noto Sans KR', sans-serif; }
+span:before{content:"\1F48C";}
+span:after{content:"\1F48C";}
+
+
+form{width:750px; margin:0 auto; text-align:center;
+	font-family: 'Noto Sans KR', sans-serif; background:white; padding-top:30px;}
+.main{padding:15px;}
+form p{padding-bottom:5px; font-weight:bold; font-size:16px;}
+label{display:inline-block;}
+
+p{width:750px; margin:0 auto; text-align:center; font-size:14px;}
+.thank:before{content:"\1F370";}
+.thank:after{content:"\1F352";}
+.foot{width:750px; margin:0 auto; text-align:center; padding-bottom:50px;}
+button{border:0; padding:15px 40px; margin:30px;}
+#cacel:hover{cursor:pointer; background:#406882; color:white;}
+#done:hover{cursor:pointer; background:#F2789F; color:white;}
+
+</style>
+
+</head>
+<body>
+  <header> 
+	<h1>Billy Angel</h1>
+	<br>
+	<span> 홈페이지 이용만족도조사 </span>
+  </header>
+  <hr>
+ 
+<section>
+ <br><br>
+  
+  
+  <form>
+  <div><img src="banner.png" ></div>
+  <br><br>
+	<div class="main">
+	<p>1. 홈페이지 방문하게 된 계기는 무엇인가요?</p>
+	<label><input type="radio" name="motive" value="internet"> 인터넷 &nbsp;  <br></label>
+	<label><input type="radio" name="motive" value="friend"> 지인소개 &nbsp;<br></label>
+	<label><input type="radio" name="motive" value="tv"> tv, 라디오 &nbsp;<br></label>
+	<label><input type="radio" name="motive" value="etc"> 기타 <br> </label>
+	<br>
+	</div>
+	
+	<div class="main">
+    <p>2. 홈페이지 방문하신 목적이 어떻게되시나요? (여러 개 선택 가능)</p>
+	<label><input type="checkbox" name="visit" value="gift"> 선물 &nbsp;<br></label>
+	<label><input type="checkbox" name="visit" value="special"> 기념일 &nbsp;<br></label>
+	<label><input type="checkbox" name="visit" value="shopping"> 쇼핑 &nbsp;<br></label>
+	<label><input type="checkbox" name="visit" value="gift"> 기타 <br></label>
+	<br>
+	</div>
+	
+	<div class="main">
+	<p>3. 주로 어떤 경로를 통해 홈페이지에 접속하시나요?</p>
+	<label><input type="radio" name="path" value="pc"> 테스크탑,노트북 &nbsp;<br></label>
+	<label><input type="radio" name="path" value="phone"> 스마트폰 &nbsp;<br></label>
+	<label><input type="radio" name="path" value="tablet"> 태블릿 &nbsp;<br></label>
+	<br>
+	</div>
+
+	<div class="main">
+	<p>4. 주로 이용하는 페이지는 어디인가요? (여러개 선택 가능)</p>
+	<label><input type="checkbox" name="page" value="product"> 제품관련 &nbsp;<br></label>
+	<label><input type="checkbox" name="page" value="qna"> 고객문의 &nbsp;<br></label>
+	<label><input type="checkbox" name="page" value="mypage"> 마이페이지 &nbsp;<br></label>
+	<label><input type="checkbox" name="page" value="notice"> 공지사항 &nbsp;<br></label>
+	<label><input type="checkbox" name="page" value="event"> 이벤트 &nbsp;<br></label>
+	<br>
+	</div>
+	
+	<div class="main">
+	<p>5. 원하는 정보를 쉽게 찾을 수 있었나요?</p>
+	<label><input type="radio" name="search" value="worst"> 매우 불만족 &nbsp;<br></label>
+	<label><input type="radio" name="search" value="bad"> 불만족 &nbsp;<br></label>
+	<label><input type="radio" name="search" value="soso"> 중간 &nbsp;<br></label>
+	<label><input type="radio" name="search" value="good"> 만족 &nbsp;<br></label>
+	<label><input type="radio" name="search" value="best"> 매우 만족 &nbsp;<br></label>	
+	<br>
+	</div>
+	
+	<div class="main">
+	<p>6. 구매과정에서 만족스러웠던 사항은 무엇인가요? (여러개 선택 가능)</p>
+	<label><input type="checkbox" name="process" value="service"> 고객응대 &nbsp;<br></label>
+	<label><input type="checkbox" name="process" value="product"> 제품 &nbsp;<br></label>
+	<label><input type="checkbox" name="process" value="delivery"> 배송 &nbsp;<br></label>
+	<label><input type="checkbox" name="process" value="information"> 제품 관련 정보 &nbsp;<br></label>
+	<br>
+	</div>
+	
+	<div class="main">
+	<p>7. 제품을 구매 후 만족도는 어느 정도인가요?</p>
+	<label><input type="radio" name="buy" value="worst"> 매우 불만족 &nbsp;<br></label>
+	<label><input type="radio" name="buy" value="bad"> 불만족 &nbsp;<br></label>
+	<label><input type="radio" name="buy" value="soso"> 중간 &nbsp;<br></label>
+	<label><input type="radio" name="buy" value="good"> 만족 &nbsp;<br></label>
+	<label><input type="radio" name="buy" value="best"> 매우 만족 &nbsp;<br></label>	
+	<br>
+	</div>
+	
+	<div class="main">
+	<p>8. 홈페이지의 접속은 원활했나요?</p>
+	<label><input type="radio" name="access" value="worst"> 매우 불만족 &nbsp;<br></label>
+	<label><input type="radio" name="access" value="bad"> 불만족 &nbsp;<br></label>
+	<label><input type="radio" name="access" value="soso"> 중간 &nbsp;<br></label>
+	<label><input type="radio" name="access" value="good"> 만족 &nbsp;<br></label>
+	<label><input type="radio" name="access" value="best"> 매우 만족 &nbsp;<br></label>
+	<br>
+	</div>	
+	
+	<div class="main">
+	<p>9. 홈페이지를 주변 친구나 동료에게 추천할 의사가 있으신가요?</p>
+	<label><input type="radio" name="recommend" value="worst"> 매우 불만족 &nbsp;<br></label>
+	<label><input type="radio" name="recommend" value="bad"> 불만족 &nbsp;<br></label>
+	<label><input type="radio" name="recommend" value="soso"> 중간 &nbsp;<br></label>
+	<label><input type="radio" name="recommend" value="good"> 만족 &nbsp;<br></label>
+	<label><input type="radio" name="recommend" value="best"> 매우 만족 &nbsp;<br></label>
+	<br>
+	</div>
+	
+	<div>
+	<p>10. 개선되었으면 하는 점이나 하고 싶은 말을 남겨주세요.</p>
+	<textarea cols="60" rows="5"></textarea>
+	</div>
+	<br>
+  </form>
+  <br><br>
+ </section>  
+ 
+  <hr>
+
+	  <p class="thank"> 시간 내주셔서 감사합니다. <br> 
+		오늘도 달콤한 하루보내세요. </p>
+   <div class="foot">
+	<button id="cacel" value="reset"> 취소 </button>
+	<button id="done"value="submit"> 제출 </button>
+  </div>
+</body>
+</html>
