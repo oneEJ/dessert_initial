@@ -1,0 +1,127 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /*font-family: 'Pacifico', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); /*font-family: 'Noto Sans KR', sans-serif;*/
+/*분#ffe3e3; #e4d8dc; #c9ccd5; #93b5c6;청*/
+
+/*special day*/
+/*-------------공통------------------------*/
+*{margin:0; padding:0;}
+a:link,a:visited {text-decoration:none;color:#000;}
+
+
+ul li{list-style:none;}
+
+/*--------------상단------------------------
+#t_nav {width:1350px; margin:0 auto;}
+#t_nav ul li{float:right; font-family:"Noto"; font-size:12px; padding:10px; }
+#t_nav ul li a{color:#000;}
+#t_nav ul li a:hover{color:#93b5c6;}*/
+
+header{width:1350px;margin:0 auto;}
+#sublogo {width:50px; margin:0 auto; padding-top:30px; padding-left:250px; float:left;} /*로고 크기 : 37*40*/
+
+/*★12/27 왜 margin:0 auto;인데 페이지를 줄이면 맨 왼쪽으로 가는지*/
+/*--------------메뉴드롭-------------------*/
+#m_nav{width:750px; margin:0 auto; padding-top:20px; border-bottom:1px solid #ccc;}
+#m_nav > ul {width:100%; margin:0 auto;text-align:center;position:relative; }
+#m_nav > ul > li{
+		display:inline-block; position:relative; 
+		width:100px; height:40px; padding-bottom:10px;}/*padding:10px 0;*/
+#m_nav > ul > li > a{display:inline; line-height:50px; 
+						font-family: 'Pacifico', cursive; 
+					text-align:center; color:#000; transition:all 1s;}
+#m_nav > ul > li:hover > a{color:#ffe3e3; transition:all 1s; }					
+
+#click{border-top:5px solid #ffe3e3; border-radius:2px;}
+
+.sub{position:absolute; left:0px; height:125px; /*left:-3에서 0으로 변경*/
+	padding:10px 0; z-index:1; top:60px; display:none; } /*top:50-> 60으로 변경*/
+
+.sub li{background:#fff; padding-bottom:5px; }
+.sub li:nth-child(3){border-radius:0 0 10px 10px; } 
+
+.sub > li{position:relative; width:100px; height:40px;} 
+.sub > li > a{font-family:'Noto Sans KR', sans-serif; font-size:14px; color:#000; 
+				line-height:40px; transition:all 1s;}
+.sub > li:hover > a{color:#93b5c6; transition:all 1s;}
+
+
+/*-------상단------------------------*/
+section{clear:both; margin-top:50px;}
+#subpage_title{width:1350x; margin:0 auto; text-align:center;  margin-bottom:30px;}
+#subpage_title p{font-family: 'Pacifico', cursive; color:#93b5c6; 
+					font-size:40px; font-weight:bold; margin-bottom:50px;}
+
+#subpage_title img{display:inline-block;
+					 width:450px; height:500px; }
+#subpage_title span{display:inline-block; vertical-align:top; margin-top:150px;
+					font-family:'Noto Sans KR', sans-serif; }
+					/*{display:flex; justify-content:flex-end; align-items:center;}*/		
+/*★글자 위에 공간이 없애는 방법*/
+
+/*----------상단 아래 동그라미 3개------*/
+#day{clear:both;}
+#day{width:1350px; margin:0 auto; text-align:center; padding-top:50px; font-family:'Noto Sans KR', sans-serif;}
+#day li{display:inline-block; vertical-align:top;
+			box-sizing:content-box; padding:15px; width:250px; height:342px;}
+#day img{width:150px; height:150px; margin-top:30px;}	
+#day p{font-size:20px; font-weight:bold; padding:10px;}
+#day span{font-size:14px;}
+/*원하나가 위로 올라가는 거 vertical-align:top;으로 해결. 박스 크기 다른거 box-sizing:content-box;로 해결. */
+
+/*------패키지 상세 -----------*/
+#intro_package{width:1350px; margin:0 auto; font-family:'Noto Sans KR', sans-serif; 
+				padding:70px 0 100px;text-align:center;  position:relative;}
+.backword{position:absolute; top:0px; left:0;opacity:.99;}
+#intro_package p {position:absolute; top:40px; left:570px;font-weight:bold; font-size:30px; margin-bottom:10px;}
+#intro_package span{position:absolute; top:90px; left:480px; text-align:center; }
+
+/*.backword{width:1350px; height:218px; background:url(backwordpackage.png); 
+position:absolute; left:10px; top:0px; bottom:0; right:0;}*/
+
+
+
+#package{width:1350px; margin:0 auto;  font-family: 'Noto Sans KR', sans-serif;}
+/*.more{border:0.5px solid #000; width:200px; height:50px; margin:20px; vertical-align:middle;}
+.more:hover{background:#ffe3e3; color:#fff;}분#ffe3e3; #e4d8dc; #c9ccd5; #93b5c6;청*/
+
+#more1,#more2,#more3,#more4{border:0.5px solid #000; width:200px; height:50px; margin:20px; background:#fff;}
+
+#m1{width:1350px; margin:0 auto;text-align:center; height:450px; }
+#m1 img{float:right;}
+#m1 p{font-size:50px; font-weight:bold; padding-top:100px; margin-bottom:20px;}
+		
+#m2{clear:both; width:1350px; height:450px; margin:0 auto;text-align:center; }
+#m2 img{float:left;}
+#m2 p{font-size:50px; font-weight:bold; padding-top:100px;  margin-bottom:20px;}
+#m2 span{ padding-bottom:30px;}
+
+#m3{clear:both; height:450px; width:1350px; margin:0 auto;text-align:center; }
+#m3 img{float:left;}
+#m3 p{font-size:50px; font-weight:bold; padding-top:100px;  margin-bottom:20px;}
+#m3 span{ padding-bottom:30px;}
+
+#m4{clear:both;width:1350px; height:700px; margin:0 auto;text-align:center; }
+#m4 img{float:right;  }
+#m4 p{font-size:50px; font-weight:bold; padding-top:100px; margin-bottom:20px;}
+
+.more{border:1px solid #ccc; background:#fff; margin-top:30px;}
+
+
+/*#m4 img:nth-child(2),#m4 img:nth-child(3){margin-top:50px; padding-right:15px;}
+#m4 p{clear:both;font-size:50px; font-weight:bold;  margin-bottom:20px;}
+#m4 span{ padding-bottom:30px;}*/
+
+/*---------------푸터 -----img{width:615px; height:315px;}---------*/
+footer{clear:both;width:100%; margin:0 auto; height:400px; background:#93b5c6; text-align:center;
+		font-family:"Noto"; color:white; } 
+#f_nav ul{padding:30px;}
+#f_nav ul li{padding:20px;font-size:14px;  font-weight:bold; display:inline;} 
+#f_nav ul li a{color:#fff;} 
+#f_nav ul li a:hover{color:#ffe3e3;} 
+
+#f_info{font-size:12px; line-height:20px;}
+
+.sns{width:100%; margin:0 auto; padding-top:30px; }
+.sns li{display:inline; padding:15px; }
+.sns i{color:#fff;}

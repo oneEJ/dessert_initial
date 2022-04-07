@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');  /*font-family: 'Pacifico', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); /*font-family: 'Noto Sans KR', sans-serif;*/
+
+*{margin:0; padding:0;}
+a:link,a:visited {text-decoration:none;color:#000;}
+
+ul li{list-style:none;}
+/*@font-face{font-family:"Noto"; src:url("webfont/NotoSansKR-Light.otf") format("otf");}*/
+
+
+/*분#ffe3e3; #e4d8dc; #c9sccd5; #93b5c6;청*/
+
+/*--------------상단------------------------*/
+#t_nav {width:1350px; margin:0 auto;}
+
+#t_nav ul{display:flex; justify-content:flex-end;}
+#t_nav ul li{font-family:'Noto Sans KR', sans-serif;; font-size:12px; padding:10px; }
+#t_nav ul li a{color:#000;}
+#t_nav ul li a:hover{color:#93b5c6;}
+#logo{width:100%; margin:0 auto; background:#ffe3e3; width:455px; height:70px;  
+	text-align:center; margin-top:50px;}
+
+/*---float:right를 하면 로그인 /회원가입 / 이용안내가 거꾸로 나와. 
+다시 전체를 float:left주면 된다는데..https://blog.naver.com/mylogin2/222208598195
+위에께 훨씬 편함*/
+/*
+#t_nav {width:1350px; margin:0 auto;}
+#t_nav ul li{float:right; font-family:'Noto Sans KR', sans-serif;; font-size:12px; padding:10px; }
+#t_nav ul li a{color:#000;}
+#t_nav ul li a:hover{color:#93b5c6;}
+#logo{clear:both; width:100%; margin:0 auto; background:#ffe3e3; width:455px; height:70px;  
+	text-align:center; margin-top:50px;}
+*/
+
+
+/*--------------메뉴드롭-------------------*/
+#m_nav > ul {width:100%; margin:0 auto;text-align:center;position:relative; }
+#m_nav > ul > li{ 
+		display:inline-block; position:relative; 
+		width:100px; height:40px; padding:10px 0;}
+#m_nav > ul > li > a{display:inline; line-height:50px; 
+						font-family: 'Pacifico', cursive; 
+					text-align:center; color:#000; transition:all 1s;}
+				
+
+#m_nav > ul > li:hover > a{color:#ffe3e3; transition:all 1s; }					
+
+
+.sub{position:absolute; left:-3px; height:125px;
+	padding:10px 0; z-index:1; top:50px; display:none;}
+
+.sub li{background:#fff; padding-bottom:5px; }
+.sub li:nth-child(3){border-radius:0 0 10px 10px; } 
+
+.sub > li{position:relative; width:100px; height:40px;} 
+.sub > li > a{font-family:"Noto"; font-size:14px; color:#000; 
+				line-height:40px; transition:all 1s;}
+.sub > li:hover > a{color:#93b5c6; transition:all 1s;}
+
+
+.bxslider{margin:0 auto;}
+
+/*--------------day 3개--------------------*/		
+#subject{width:1000px; height:600px; margin:0 auto;  
+		padding-top:30px; text-align:center;}			
+#s1, #s2, #s3{width:279px; height:450px; display:inline-block; background:#c9ccd5; margin:10px;}
+#s11, #s21, #s31{width:279px; height:70px; display:inline-block; margin:10px;
+				border:1px solid #ccc; font-family: 'Pacifico', cursive; line-height:60px; 
+				color:#000; background-color:#fff;cursor:pointer;
+				} 
+
+	
+/*-------------- 중간 배너------------background-color:#ffe3e3;---- - */ 			
+#m_banner{clear:both; width:1350px; height:600px; margin:0 auto; 
+		 background:url(img/mbanner.png) no-repeat ;
+		 padding:10px 0;}
+ /*★12/21 왜 여기서 background이미지가 안뜨는 건지? 인덱스 img로 하면 사진 나옴 - center center; 다른 데 가있어서 그런거래 사진*/
+
+/*--------상세 제품 사진(동그라미들)----케이크 머핀 파이 --------------*/
+#menu{width:1350px; height:750px; margin:0 auto;  padding:10px 0; text-align:center;} 
+#menu>div>p{font-family: 'Pacifico', cursive; margin-bottom:3px;}
+.m_content{padding:25px;} 
+.m_content li{display:inline-block;} 
+/*.m_content div {display:inline-block;} */
+
+.m{background:url(img/c1.png) no-repeat;
+}
+
+/*사각 사진들*/
+
+#square{width:1450px; margin:0 auto; height:800px; padding:30px 0;
+		display:grid;  grid-template-columns:repeat(4,1fr);
+		justify-items:center; /*각div칸 좌우정렬*/ align-items:center; /*상하정렬*/
+		} 
+.item{width:350px; height:250px;} 
+.item img{width:350px; height:250px;}
+/*(auto-fit, minmax(300px,4fr));repeat(4,1fr))는 안되네 grid-row-align: center;
+  grid-column-align: center;*/
+
+/*---------------푸터 -----img{width:615px; height:315px;}---------*/
+footer{clear:both;width:100%; margin:0 auto; height:400px; background:#93b5c6; text-align:center;
+		font-family:"Noto"; color:white; } 
+#f_nav ul{padding:30px;}
+#f_nav ul li{padding:20px;font-size:14px;  font-weight:bold; display:inline;} 
+#f_nav ul li a{color:#fff;} 
+#f_nav ul li a:hover{color:#ffe3e3;} 
+
+#f_info{font-size:12px; line-height:20px;}
+
+.sns{width:100%; margin:0 auto; padding-top:30px; }
+.sns li{display:inline; padding:15px; }
+.sns i{color:#fff;}

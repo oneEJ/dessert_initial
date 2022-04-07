@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /*font-family: 'Pacifico', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); /*font-family: 'Noto Sans KR', sans-serif;*/
+/*분#ffe3e3; #e4d8dc; #c9ccd5; #93b5c6;청*/
+
+/*cake 세부 페이지*/
+/*-------------공통------------------------*/
+*{margin:0; padding:0;}
+a:link,a:visited {text-decoration:none;color:#000;}
+
+
+ul li{list-style:none;}
+
+/*--------------상단------------------------
+#t_nav {width:1350px; margin:0 auto;}
+#t_nav ul li{float:right; font-family:"Noto"; font-size:12px; padding:10px; }
+#t_nav ul li a{color:#000;}
+#t_nav ul li a:hover{color:#93b5c6;}*/
+
+header{width:1350px;margin:0 auto;}
+#sublogo {width:50px; margin:0 auto; padding-top:30px; padding-left:250px; float:left;} /*로고 크기 : 37*40*/
+/*--------------메뉴드롭-------------------*/
+#m_nav{ width:750px; margin:0 auto; padding-top:20px; border-bottom:1px solid #ccc;}
+#m_nav > ul {width:100%; margin:0 auto;text-align:center;position:relative; }
+#m_nav > ul > li{
+		display:inline-block; position:relative; 
+		width:100px; height:40px; padding-bottom:10px;}/*padding:10px 0;*/
+#m_nav > ul > li > a{display:inline; line-height:50px; 
+						font-family: 'Pacifico', cursive; 
+					text-align:center; color:#000; transition:all 1s;}
+#m_nav > ul > li:hover > a{color:#ffe3e3; transition:all 1s; }					
+
+#click{border-top:5px solid #ffe3e3; border-radius:2px;}			
+
+
+.sub{position:absolute; left:0px; height:125px; /*left:-3에서 0으로 변경*/
+	padding:10px 0; z-index:1; top:60px; display:none; } /*top:50-> 60으로 변경*/
+
+.sub li{background:#fff; padding-bottom:5px; }
+.sub li:nth-child(3){border-radius:0 0 10px 10px; } 
+
+.sub > li{position:relative; width:100px; height:40px;} 
+.sub > li > a{font-family:'Noto Sans KR', sans-serif; font-size:14px; color:#000; 
+				line-height:40px; transition:all 1s;}
+.sub > li:hover > a{color:#93b5c6; transition:all 1s;}
+
+/*-------상단------------------------*/
+section{clear:both; margin-top:50px;}
+#subpage_title{width:1350px; margin:0 auto; text-align:center; margin-bottom:30px;}
+#subpage_title p{font-family: 'Pacifico', cursive; color:#93b5c6; 
+					font-size:40px; font-weight:bold; }
+#subpage_title img{margin:25px 0;} /*background:pink; width:1342px; height:453px;*/
+#subpage_title span{font-family:'Noto Sans KR', sans-serif;}			
+
+
+/*---메인(케이크들)----*/
+#contents{width:900px; margin:0 auto;text-align:center; padding:15px 0 200px 0;font-family:'Noto Sans KR', sans-serif;}
+#contents li{display:inline-block; margin:15px;}
+#contents img{width:210px; height:315px;}
+#contents p{font-weight:bold; font-size:18px; margin:5px 0; padding-bottom:5px;border-bottom:1px solid #e4d8dc;}
+
+#main{position:relative;}
+#new img{position:absolute; top:-35px; left:70px; width:65px; height:65px;}
+/*main이랑 new를 class말고 id로 바꾸니까 확대해도 착 붙어있네*/
+
+/*---------------푸터 -----img{width:615px; height:315px;}---------*/
+footer{clear:both;width:100%; margin:0 auto; height:400px; background:#93b5c6; text-align:center;
+		font-family:"Noto"; color:white; } 
+#f_nav ul{padding:30px;}
+#f_nav ul li{padding:20px;font-size:14px;  font-weight:bold; display:inline;} 
+#f_nav ul li a{color:#fff;} 
+#f_nav ul li a:hover{color:#ffe3e3;} 
+
+#f_info{font-size:12px; line-height:20px;}
+
+.sns{width:100%; margin:0 auto; padding-top:30px; }
+.sns li{display:inline; padding:15px; }
+.sns i{color:#fff;}

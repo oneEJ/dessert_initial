@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /*font-family: 'Pacifico', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); /*font-family: 'Noto Sans KR', sans-serif;*/
+/*분#ffe3e3; #e4d8dc; #c9ccd5; #93b5c6;청*/
+
+/*-------------공통------------------------*/
+*{margin:0; padding:0;}
+a:link,a:visited {text-decoration:none;color:#000;}
+
+
+ul li{list-style:none;}
+
+/*--------------상단------------------------
+#t_nav {width:1350px; margin:0 auto;}
+#t_nav ul li{float:right; font-family:"Noto"; font-size:12px; padding:10px; }
+#t_nav ul li a{color:#000;}
+#t_nav ul li a:hover{color:#93b5c6;}*/
+
+header{width:1350px;margin:0 auto;}
+#sublogo {width:50px; margin:0 auto; padding-top:30px; padding-left:250px; float:left;} /*로고 크기 : 37*40*/
+/*★12/27 왜 margin:0 auto;인데 페이지를 줄이면 맨 왼쪽으로 가는지. 가끔 넓이 줘도 마진영오토 안듣는 애들 왜그런건지. -> 헤더를 안줘서 그럤어*/
+
+/*--------------메뉴드롭-------------------*/
+#m_nav{ width:750px; margin:0 auto; padding-top:20px; border-bottom:1px solid #ccc;}
+#m_nav > ul {width:100%; margin:0 auto;text-align:center;position:relative; }
+#m_nav > ul > li{
+		display:inline-block; position:relative; 
+		width:100px; height:40px; padding-bottom:10px;}/*padding:10px 0;*/
+#m_nav > ul > li > a{display:inline; line-height:50px; 
+						font-family: 'Pacifico', cursive; 
+					text-align:center; color:#000; transition:all 1s;}
+#m_nav > ul > li:hover > a{color:#ffe3e3; transition:all 1s; }					
+
+#click{border-top:5px solid #ffe3e3; border-radius:2px;}
+
+
+.sub{position:absolute; left:0px; height:125px; /*left:-3에서 0으로 변경*/
+	padding:10px 0; z-index:1; top:60px; display:none; } /*top:50-> 60으로 변경*/
+
+.sub li{background:#fff; padding-bottom:5px; }
+.sub li:nth-child(3){border-radius:0 0 10px 10px; } 
+
+.sub > li{position:relative; width:100px; height:40px;} 
+.sub > li > a{font-family:'Noto Sans KR', sans-serif; font-size:14px; color:#000; 
+				line-height:40px; transition:all 1s;}
+.sub > li:hover > a{color:#93b5c6; transition:all 1s;}
+
+
+
+/*-------상단------------------------*/
+section{clear:both; margin-top:50px;}
+#subpage_title{width:1350px; margin:0 auto; text-align:center;}
+#subpage_title p{font-family: 'Pacifico', cursive; color:#93b5c6; 
+					font-size:40px; font-weight:bold; }
+#subpage_title img{margin:25px 0;} /*background:pink; width:1350px; height:280px;*/
+#subpage_title span{font-family:'Noto Sans KR', sans-serif; }			
+
+/*--------기업 이념 (중간 원 4개) ------*/
+#principle{width:1350px; margin:0 auto; text-align:center; padding-top:50px; font-family:'Noto Sans KR', sans-serif;}
+#principle li{display:inline-block; vertical-align:top;
+			box-sizing:content-box; padding:15px; width:250px; height:342px;}
+#principle img{width:190px; height:190px;}
+#principle p{font-size:18px; font-weight:bold; padding:10px;}
+#principle span{font-size:14px;}
+/*원하나가 위로 올라가는 거 vertical-align:top;으로 해결. 박스 크기 다른거 box-sizing:content-box;로 해결. 궁디팡팡*/
+
+/*------하단 사진----*/
+#m_cake{width:1350px; margin:0 auto; text-align:center; padding:40px 0;
+		position:relative;}/*background:url(img/backword.png) no-repeat center center;*/
+#m_cake > img{margin-top:40px;}
+.word{position:absolute; left:0px; top:0px;}
+
+#six{width:1350px; margin:0 auto; text-align:center; 
+	padding:40px 0; position:relative;}
+#six img{display:block;}
+#six img:nth-child(odd){margin-left:370px; margin-bottom:25px; }
+#six img:nth-child(even){margin-left:600px; margin-bottom:25px; }
+#six p{font-family: 'Pacifico', cursive; font-weight:bold; font-size:60px;}
+
+
+.s1{position:absolute; z-index:1; left:270px; top:-20px;}
+.s2{position:absolute; z-index:2; left:950px; top:75px;}
+.s3{position:absolute; z-index:2; left:270px; top:180px;}
+.s4{position:absolute; z-index:2; left:950px; top:280px;}
+.s5{position:absolute; z-index:2; left:270px; top:380px;}
+.s6{position:absolute; z-index:2; left:950px; top:475px;}
+
+
+
+/*---------------푸터 -----img{width:615px; height:315px;}---------*/
+footer{clear:both; width:100%; margin:0 auto; height:400px; background:#93b5c6; text-align:center;
+		font-family:"Noto"; color:white; } 
+#f_nav ul{padding:30px;}
+#f_nav ul li{padding:20px;font-size:14px;  font-weight:bold; display:inline;} 
+#f_nav ul li a{color:#fff;} 
+#f_nav ul li a:hover{color:#ffe3e3;} 
+
+#f_info{font-size:12px; line-height:20px;}
+
+.sns{width:100%; margin:0 auto; padding-top:30px; }
+.sns li{display:inline; padding:15px; }
+.sns i{color:#fff;}
